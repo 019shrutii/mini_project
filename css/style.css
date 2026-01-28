@@ -1,0 +1,46 @@
+:root {
+  --main-color: #6c63ff;
+  --text-color: #333;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.navbar a:hover {
+  color: var(--main-color);
+}
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  display: flex;
+  gap: 1rem;
+  padding: 2rem;
+}
+.card {
+  padding: 2rem;
+  background: var(--main-color);
+  color: white;
+  transition: transform 0.3s;
+}
+.card:hover {
+  transform: scale(1.05);
+}
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+  }
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
