@@ -1,6 +1,6 @@
 :root {
-  --main-color: #6c63ff;
-  --text-color: #333;
+  --main-color: blue;
+  --text-color: black;
 }
 .navbar {
   position: sticky;
